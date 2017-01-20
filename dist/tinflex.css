@@ -1,0 +1,42 @@
+/*!
+ * loadme v1.0.0 (https://github.com/zx1988826/tin-flex#readme)
+ * Copyright 2017 Tencent, Inc.
+ * Licensed under the MIT license
+ */
+.loadme-mask {
+  background-color: #fff;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  z-index: 99;
+  left: 50%;
+  top: 50%;
+  margin: -50px 0 0 -50px;
+  border-radius: 10px;
+}
+@-webkit-keyframes loadme-bouncedelay-animate {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes loadme-bouncedelay-animate {
+  0%,
+  80%,
+  100% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImJhc2UvYXR0cmlidXRlLmxlc3MiLCJ0aW5mbGV4LmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7OztBQUFBO0VBQ0ksdUJBQUE7RUFDQSxhQUFBO0VBQ0EsY0FBQTtFQUNBLGdCQUFBO0VBQ0EsWUFBQTtFQUNBLFVBQUE7RUFDQSxTQUFBO0VBQ0Esd0JBQUE7RUFDQSxvQkFBQTtDQ0NIO0FERUQ7RUFDSTs7O0lBR0ksNEJBQUE7WUFBQSxvQkFBQTtHQ0FMO0VERUM7SUFDSSw0QkFBQTtZQUFBLG9CQUFBO0dDQUw7Q0FDRjtBRFJEO0VBQ0k7OztJQUdJLDRCQUFBO1lBQUEsb0JBQUE7R0NBTDtFREVDO0lBQ0ksNEJBQUE7WUFBQSxvQkFBQTtHQ0FMO0NBQ0YiLCJmaWxlIjoidGluZmxleC5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIubG9hZG1lLW1hc2sge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmY7XG4gICAgd2lkdGg6IDEwMHB4O1xuICAgIGhlaWdodDogMTAwcHg7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHotaW5kZXg6IDk5O1xuICAgIGxlZnQ6IDUwJTtcbiAgICB0b3A6IDUwJTtcbiAgICBtYXJnaW46IC01MHB4IDAgMCAtNTBweDtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xufVxuXG5Aa2V5ZnJhbWVzIGxvYWRtZS1ib3VuY2VkZWxheS1hbmltYXRlIHtcbiAgICAwJSxcbiAgICA4MCUsXG4gICAgMTAwJSB7XG4gICAgICAgIHRyYW5zZm9ybTogc2NhbGUoMCk7XG4gICAgfVxuICAgIDQwJSB7XG4gICAgICAgIHRyYW5zZm9ybTogc2NhbGUoMS4wKTtcbiAgICB9XG59IiwiLmxvYWRtZS1tYXNrIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZjtcbiAgd2lkdGg6IDEwMHB4O1xuICBoZWlnaHQ6IDEwMHB4O1xuICBwb3NpdGlvbjogZml4ZWQ7XG4gIHotaW5kZXg6IDk5O1xuICBsZWZ0OiA1MCU7XG4gIHRvcDogNTAlO1xuICBtYXJnaW46IC01MHB4IDAgMCAtNTBweDtcbiAgYm9yZGVyLXJhZGl1czogMTBweDtcbn1cbkBrZXlmcmFtZXMgbG9hZG1lLWJvdW5jZWRlbGF5LWFuaW1hdGUge1xuICAwJSxcbiAgODAlLFxuICAxMDAlIHtcbiAgICB0cmFuc2Zvcm06IHNjYWxlKDApO1xuICB9XG4gIDQwJSB7XG4gICAgdHJhbnNmb3JtOiBzY2FsZSgxKTtcbiAgfVxufVxuIl19 */
