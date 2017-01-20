@@ -1,0 +1,6 @@
+{
+    "box-model"                   : false,
+    "ids"                         : false,
+    "font-sizes"                  : false,
+    "order-alphabetical"          : false,
+}

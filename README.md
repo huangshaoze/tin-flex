@@ -1,4 +1,4 @@
-loadme💫 最全的适用于移动端的loading库
+tin-flex💫 基于flex的极简框架
 ====
 
 [![Build Status](https://travis-ci.org/weui/weui.svg?branch=master)](https://travis-ci.org/weui/weui)
@@ -7,14 +7,14 @@ loadme💫 最全的适用于移动端的loading库
 
 ## 概述
 
-loadme 几乎是目前最全的适用于移动端的loading css3样式库，并且还在不断持续更新中，而且使用它也非常的简单。因为它是纯CSS3的代码，不包含任何JS。
+tin-flex 是基于flex的极简框架，你可以用小巧的它搭建几乎任何的移动端布局
 
 ## 文档
 - loadme💫 英文文档参考 [Wiki](https://github.com/weui/weui/wiki)
 
 ## 扩展
-- [tin-flex](https://github.com/zx1988826/tin-flex/)
-- [tin-ui](https://github.com/zx1988826/tin-ui/)
+- [loadme 最全的适用于移动端的loading库](https://github.com/zx1988826/loadme/)
+- [tin-ui 移动端UI框架](https://github.com/zx1988826/tin-ui/)
 
 ## License
 The MIT License(http://opensource.org/licenses/MIT)
