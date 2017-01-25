@@ -1,15 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<title>tinflex</title>
-	<link rel="stylesheet" type="text/css" href="css/tinflex.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tinflex</title>
+    <link rel="stylesheet" type="text/css" href="css/tinflex.css">
+    <style>
+    * {
+        margin: 0;
+        padding: 0
+    }
+    
+    .tin-flex .tin-item {
+        height: 100px
+    }
+    
+    .i1 {
+        background-color: #3273dc
+    }
+    
+    .i2 {
+        background-color: #23d160
+    }
+    
+    .i3 {
+        background-color: #ffdd57
+    }
+    
+    .i4 {
+        background-color: #ff3860
+    }
+    
+    .ins {
+        margin: 10px 20px;
+        padding: 20px;
+        background-color: #000;
+        opacity: 0.5;
+        color: #fff;
+        border-radius: 10px
+    }
+    
+    .line {
+        height: 1px;
+        width: 100%;
+        background-color: #DDD;
+        margin: 20px 0;
+    }
+    </style>
 </head>
+
 <body>
-	<div class="loadme-mask">
-	</div>
-	<h1>
-		a2131232132
-	</h1>
+    <div class="ins">
+        构建基本的flex布局
+    </div>
+    <div class="tin-flex">
+        <div class="tin-item tin-item-25 i1">i1</div>
+        <div class="tin-item tin-item-25 i2">i2</div>
+        <div class="tin-item tin-item-25 i3">i3</div>
+        <div class="tin-item tin-item-25 i4">i4</div>
+    </div>
+    <div class="line"></div>
+    <div class="ins">
+        更改单个列的大小
+    </div>
+    <div class="tin-flex">
+        <div class="tin-item tin-item-15 i1">i1</div>
+        <div class="tin-item tin-item-25 i2">i2</div>
+        <div class="tin-item tin-item-10 i3">i3</div>
+        <div class="tin-item tin-item-50 i4">i4</div>
+    </div>
+    <div class="line"></div>
+    <div class="ins">
+        列偏移
+    </div>
+    <div class="tin-flex">
+        <div class="tin-item tin-item-15 i1">i1</div>
+        <div class="tin-item tin-item-25 i2">i2</div>
+        <div class="tin-item tin-item-10 i3">i3</div>
+        <div class="tin-item tin-item-50 i4">i4</div>
+    </div>
+    <div class="line"></div>
+    <div class="ins">
+        响应式列
+    </div>
+    <div class="tin-flex">
+        <div class="tin-item i1">i1</div>
+        <div class="tin-item i2">i2</div>
+        <div class="tin-item i3">i3</div>
+        <div class="tin-item i4">i4</div>
+    </div>
+    <div class="line"></div>
+    <div class="ins">
+        自动换行
+    </div>
+    <div class="tin-flex tin-flex-wrap">
+        <div class="tin-item tin-item-15 i1">i1</div>
+        <div class="tin-item tin-item-25 i2">i2</div>
+        <div class="tin-item tin-item-10 i3">i3</div>
+        <div class="tin-item tin-item-50 i4">i4</div>
+        <div class="tin-item tin-item-50 i4">i4</div>
+        <div class="tin-item tin-item-25 i2">i2</div>
+    </div>
+    <div class="line"></div>
+    <div class="ins">
+        定义个别项目的对齐方式
+    </div>
+    <div class="tin-flex">
+        <div class="tin-item tin-item-25 tin-item-right i1">i1</div>
+        <div class="tin-item tin-item-25 tin-item-top i2">i2</div>
+        <div class="tin-item tin-item-25 tin-item-bottom i3">i3</div>
+        <div class="tin-item tin-item-25 i4">i4</div>
+    </div>
 </body>
+
 </html>
