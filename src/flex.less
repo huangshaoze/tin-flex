@@ -1,27 +1,39 @@
 .tin-flex {
+    /* 容器默认flex属性 */
     display: flex;
     box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: center;
     /* 容器属性 */
     /* 自动换行 */
     &.tin-flex-wrap {
         flex-wrap: wrap;
-        align-content: flex-start;
     }
-    /* 交叉轴占满整列空间 */
-    &.tin-flex-stretch {
+    /* 交叉轴对齐方式 */
+    &.tin-flex-items-stretch {
         align-items: stretch;
     }
-    /* 交叉轴首行文字基线对齐 */
-    &.tin-flex-baseline {
+    &.tin-flex-items-baseline {
         align-items: baseline;
     }
-    /* 默认交叉轴水平轴均居中 */
+    &.tin-flex-items-start {
+        align-items: flex-start;
+    }
+    /* 主轴对齐方式 */
+    &.tin-flex-justifyContent-center {
+        justify-content: center;
+    }
+    &.tin-flex-justifyContent-between {
+        justify-content: space-between;
+    }
+    &.tin-flex-justifyContent-around {
+        justify-content: space-around;
+    }
     .tin-item {
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex: 1 1 auto;
         box-sizing: border-box;
+        text-align: center;
         /* 列偏移 */
         &.tin-item-first {
             order: -99;
@@ -60,21 +72,25 @@
         &.tin-item-10 {
             flex: 0 1 10%;
         }
-        /* 水平轴右对齐 */
+        /* 主轴右对齐 */
         &.tin-item-right {
             justify-content: flex-end;
         }
-        /* 水平轴左对齐 */
+         /* 主轴右对齐 */
+        &.tin-item-center {
+            justify-content: center;
+        }
+        /* 主轴左对齐 */
         &.tin-item-left {
             justify-content: flex-start;
         }
         /* 交叉轴上对齐 */
         &.tin-item-top {
-            align-items: flex-start;
+            align-self: flex-start;
         }
         /* 交叉轴下对齐 */
         &.tin-item-bottom {
-            align-items: flex-end;
+            align-self: flex-end;
         }
     }
 }

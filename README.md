@@ -10,7 +10,12 @@ tin-flex💫 基于flex的极简框架
 tin-flex 是基于flex的极简框架，你可以用小巧的它搭建几乎任何的移动端布局
 
 ## 文档
-- loadme💫 英文文档参考 [Wiki](https://github.com/weui/weui/wiki)
+
+## Usage
+### gulp watch
+开发模式
+### gulp build
+生产模式
 
 ## 扩展
 - [loadme 最全的适用于移动端的loading库](https://github.com/zx1988826/loadme/)
@@ -21,4 +26,4 @@ The MIT License(http://opensource.org/licenses/MIT)
 
 ## 贡献
 
-如果你有好的意见或建议，欢迎给我们提issue或pull request，为提升loadme体验贡献力量
+如果你有好的意见或建议，欢迎给我们提issue或pull request，为提升tin-flex体验贡献力量
