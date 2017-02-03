@@ -60,3 +60,5 @@ gulp.task('watch', ['example', 'server'], function() {
     gulp.watch("./src/**/*.less", ['example']);
     gulp.watch("./example/*.html").on('change', browserSync.reload);
 });
+
+gulp.task('release', ['build']);
