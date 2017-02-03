@@ -8,10 +8,12 @@ tin-flex💫 基于flex的极简框架
 ## 概述
 
 tin-flex 是基于flex的极简框架，你可以用小巧的它搭建几乎任何的移动端布局
+> 但是注意，tin-flex只注重于布局的样式，并不包含任何其他的样式修饰。
 
 ## 文档
 
 #### 1.构建基本的flex布局
+你可以通过 **tin-flex** 搭建一个flex容器，通过 **tin-item** 来搭建容器中的部件
 ```html
 <div class="tin-flex">
     <div class="tin-item i1 tin-item-center">i1</div>
@@ -23,6 +25,7 @@ tin-flex 是基于flex的极简框架，你可以用小巧的它搭建几乎任�
 ![构建基本的flex布局](http://ohwq8bodu.bkt.clouddn.com/git/id_rsa_2048.png)
 
 #### 2.百分比更改单个列的大小
+如果你想自行安排部件 **tin-item** 的大小，那么久通过 **tin-item-10** ，**tin-item-15** ，**tin-item-25** ，**tin-item-50** 。最后的数字，表示部件占据容器的百分比。
 ```html
 <div class="tin-flex">
     <div class="tin-item tin-item-15 i1">i1</div>
@@ -34,6 +37,7 @@ tin-flex 是基于flex的极简框架，你可以用小巧的它搭建几乎任�
 ![百分比更改单个列的大小](http://ohwq8bodu.bkt.clouddn.com/git/AEA71461-63A0-46BD-9AAB-4EFBF7B061BF.png)
 
 #### 3.flex布局中的列偏移
+tin-item-first，tin-item-last，可以用来前置或者后置容器中的部件。tin-item-offset-50 ，用来决定部件的偏移量，具体的百分比你自己决定。
 ```html
 <div class="ins">
     列偏移示例1
@@ -53,7 +57,8 @@ tin-flex 是基于flex的极简框架，你可以用小巧的它搭建几乎任�
 ```
 ![flex布局中的列偏移](http://ohwq8bodu.bkt.clouddn.com/git/C5C0DC64-D9D6-4D99-BDBC-809CE33AF620.png)
 
-#### 4.响应式列,如果你不确定百分比的情况下，你可以直接用 **tin-item** 来自动平均分布flex布局
+#### 4.响应式列
+如果你不确定百分比的情况下，你可以直接用 **tin-item** 来自动平均分布flex布局
 ```html
 <div class="tin-flex">
     <div class="tin-item i1">i1</div>
@@ -66,7 +71,8 @@ tin-flex 是基于flex的极简框架，你可以用小巧的它搭建几乎任�
 ```
 ![响应式列](http://ohwq8bodu.bkt.clouddn.com/git/17786751-CE9F-432D-8737-5247C1E7600A.png)
 
-#### 5.自动换行,默认情况下，容器中的flex是不换行的，你可以加上 **tin-flex-wrap** 让它换行
+#### 5.自动换行
+默认情况下，容器中的flex是不换行的，你可以加上 **tin-flex-wrap** 让它自动换行
 ```html
 <div class="tin-flex tin-flex-wrap">
     <div class="tin-item tin-item-15 i1">i1</div>
@@ -79,7 +85,8 @@ tin-flex 是基于flex的极简框架，你可以用小巧的它搭建几乎任�
 ```
 ![自动换行](http://ohwq8bodu.bkt.clouddn.com/git/09360691-5B1B-41DB-9009-CF54075EA5AE.png)
 
-#### 6.定义个别项目的对齐方式，默认情况下，我们是让容器中部件上下居中的，你可以更改它的对齐方式。使用它的方式非常简单，你只需要记住 right top bottom left 即可。
+#### 6.定义个别项目的对齐方式
+默认情况下，我们是让容器中部件上下居中的，你可以更改它的对齐方式。使用它的方式非常简单，你只需要记住 right top bottom left 即可。
 ```html
 <div class="tin-flex">
     <div class="tin-item tin-item-25 tin-item-right i1">i1</div>
@@ -90,7 +97,8 @@ tin-flex 是基于flex的极简框架，你可以用小巧的它搭建几乎任�
 ```
 ![定义个别项目的对齐方式](http://ohwq8bodu.bkt.clouddn.com/git/D7D6841F-3B0B-4FC1-A626-7765BE2706F4.png)
 
-#### 8.流式布局，如果你偶尔想用到流式布局,那也可以，tin-flex引入了 类似bootstrap的栅格系统，你可以使用它并且不受限。
+#### 8.流式布局
+如果你偶尔想用到流式布局,那也可以，tin-flex引入了类似bootstrap的栅格系统，你可以灵活使用。我们支持并且鼓励使用更多灵活的技术而不仅仅局限于使用flex。
 ```html
 <div class="container">
     <div class="row">
