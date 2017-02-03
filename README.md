@@ -2,7 +2,7 @@ tin-flex💫 基于flex的极简框架
 ====
 
 [![Build Status](https://api.travis-ci.org/zx1988826/tin-flex.svg?branch=master)](https://travis-ci.org/zx1988826/tin-flex)
-[![npm version](https://img.shields.io/badge/npm-v1.0.2-blue.svg)](https://www.npmjs.com/package/tin-flex)
+[![npm version](https://img.shields.io/badge/npm-v2.0.0-blue.svg)](https://www.npmjs.com/package/tin-flex)
 [![Gitter](https://badges.gitter.im/weui/weui.svg)](https://gitter.im/tin-flex)
 
 ## 概述
