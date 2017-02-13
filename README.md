@@ -14,12 +14,14 @@ tin-flex 是基于flex布局的极简CSS3框架，你可以用小巧的它搭建
 
 #### 1.构建基本的flex布局
 你可以通过 **tin-flex** 搭建一个flex容器，通过 **tin-item** 来搭建容器中的部件
+> 这里请注意一下有 tin-item-auto 和 没有 tin-item-auto 的区别。它非常重要，默认tin-item部件是平均分布大小的。加了tin-item-auto类后，将自动根据部件内容缩放。
+
 ```html
 <div class="tin-flex">
     <div class="tin-item i1 tin-item-center">i1</div>
     <div class="tin-item i2 tin-item-right">i2</div>
-    <div class="tin-item i3">i3</div>
-    <div class="tin-item i4">i4</div>
+    <div class="tin-item tin-item-auto i3">i3</div>
+    <div class="tin-item tin-item-auto i4">i4</div>
 </div>
 ```
 ![构建基本的flex布局](http://ohwq8bodu.bkt.clouddn.com/git/id_rsa_2048.png)
@@ -57,16 +59,16 @@ tin-item-first，tin-item-last，可以用来前置或者后置容器中的部�
 ```
 ![flex布局中的列偏移](http://ohwq8bodu.bkt.clouddn.com/git/C5C0DC64-D9D6-4D99-BDBC-809CE33AF620.png)
 
-#### 4.响应式列
-如果你不确定百分比的情况下，你可以直接用 **tin-item、tin-item-auto** 来自动平均分布flex布局
+#### 4.自动列
+如果你不确定百分比的情况下，你可以直接用 **tin-item 和 tin-item-auto** 来自动根据部件内容分布flex布局
 ```html
 <div class="tin-flex">
-    <div class="tin-item tin-item-auto i1">i1</div>
-    <div class="tin-item tin-item-auto i2">i2</div>
-    <div class="tin-item tin-item-auto i3">i3</div>
-    <div class="tin-item tin-item-auto i4">i4</div>
-    <div class="tin-item tin-item-auto i2">i5</div>
-    <div class="tin-item tin-item-auto i3">i6</div>
+    <div class="tin-item i1 tin-item-auto">i1++++</div>
+    <div class="tin-item i2 tin-item-auto">i2+</div>
+    <div class="tin-item i3 tin-item-auto">i3</div>
+    <div class="tin-item i4 tin-item-auto">i4++++++++</div>
+    <div class="tin-item i2 tin-item-auto">i5</div>
+    <div class="tin-item i3 tin-item-auto">i6</div>
 </div>
 ```
 ![响应式列](http://ohwq8bodu.bkt.clouddn.com/git/17786751-CE9F-432D-8737-5247C1E7600A.png)
