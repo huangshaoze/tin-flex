@@ -28,10 +28,10 @@ tin-flex 是基于flex布局的极简CSS3框架，你可以用小巧的它搭建
 如果你想自行安排部件 **tin-item** 的大小，那么久通过 **tin-item-10** ，**tin-item-15** ，**tin-item-25** ，**tin-item-50** 。最后的数字，表示部件占据容器的百分比。
 ```html
 <div class="tin-flex">
-    <div class="tin-item tin-item-15 i1">i1</div>
-    <div class="tin-item tin-item-25 i2">i2</div>
+    <div class="tin-item tin-item-10 i1">i1</div>
+    <div class="tin-item tin-item-20 i2">i2</div>
     <div class="tin-item tin-item-10 i3">i3</div>
-    <div class="tin-item tin-item-50 i4">i4</div>
+    <div class="tin-item tin-item-60 i4">i4</div>
 </div>
 ```
 ![百分比更改单个列的大小](http://ohwq8bodu.bkt.clouddn.com/git/AEA71461-63A0-46BD-9AAB-4EFBF7B061BF.png)
@@ -43,8 +43,8 @@ tin-item-first，tin-item-last，可以用来前置或者后置容器中的部�
     列偏移示例1
 </div>
 <div class="tin-flex">
-    <div class="tin-item tin-item-15 i1">i1</div>
-    <div class="tin-item tin-item-25 i2">i2</div>
+    <div class="tin-item tin-item-10 i1">i1</div>
+    <div class="tin-item tin-item-30 i2">i2</div>
     <div class="tin-item tin-item-10 i3">i3</div>
     <div class="tin-item tin-item-50 tin-item-first i4">i4</div>
 </div>
@@ -58,15 +58,15 @@ tin-item-first，tin-item-last，可以用来前置或者后置容器中的部�
 ![flex布局中的列偏移](http://ohwq8bodu.bkt.clouddn.com/git/C5C0DC64-D9D6-4D99-BDBC-809CE33AF620.png)
 
 #### 4.响应式列
-如果你不确定百分比的情况下，你可以直接用 **tin-item** 来自动平均分布flex布局
+如果你不确定百分比的情况下，你可以直接用 **tin-item、tin-item-auto** 来自动平均分布flex布局
 ```html
 <div class="tin-flex">
-    <div class="tin-item i1">i1</div>
-    <div class="tin-item i2">i2</div>
-    <div class="tin-item i3">i3</div>
-    <div class="tin-item i4">i4</div>
-    <div class="tin-item i2">i5</div>
-    <div class="tin-item i3">i6</div>
+    <div class="tin-item tin-item-auto i1">i1</div>
+    <div class="tin-item tin-item-auto i2">i2</div>
+    <div class="tin-item tin-item-auto i3">i3</div>
+    <div class="tin-item tin-item-auto i4">i4</div>
+    <div class="tin-item tin-item-auto i2">i5</div>
+    <div class="tin-item tin-item-auto i3">i6</div>
 </div>
 ```
 ![响应式列](http://ohwq8bodu.bkt.clouddn.com/git/17786751-CE9F-432D-8737-5247C1E7600A.png)
@@ -74,13 +74,16 @@ tin-item-first，tin-item-last，可以用来前置或者后置容器中的部�
 #### 5.自动换行
 默认情况下，容器中的flex是不换行的，你可以加上 **tin-flex-wrap** 让它自动换行
 ```html
+<div class="ins">
+    自动换行
+</div>
 <div class="tin-flex tin-flex-wrap">
-    <div class="tin-item tin-item-15 i1">i1</div>
-    <div class="tin-item tin-item-25 i2">i2</div>
+    <div class="tin-item tin-item-10 i1">i1</div>
+    <div class="tin-item tin-item-20 i2">i2</div>
     <div class="tin-item tin-item-10 i3">i3</div>
+    <div class="tin-item tin-item-60 i4">i4</div>
     <div class="tin-item tin-item-50 i4">i4</div>
-    <div class="tin-item tin-item-50 i4">i4</div>
-    <div class="tin-item tin-item-25 i2">i2</div>
+    <div class="tin-item tin-item-20 i2">i2</div>
 </div>
 ```
 ![自动换行](http://ohwq8bodu.bkt.clouddn.com/git/09360691-5B1B-41DB-9009-CF54075EA5AE.png)
@@ -89,10 +92,10 @@ tin-item-first，tin-item-last，可以用来前置或者后置容器中的部�
 默认情况下，我们是让容器中部件上下居中的，你可以更改它的对齐方式。使用它的方式非常简单，你只需要记住 right top bottom left 即可。
 ```html
 <div class="tin-flex">
-    <div class="tin-item tin-item-25 tin-item-right i1">i1</div>
-    <div class="tin-item tin-item-25 tin-item-top i2">i2</div>
-    <div class="tin-item tin-item-25 tin-item-bottom i3">i3</div>
-    <div class="tin-item tin-item-25 i4">i4</div>
+    <div class="tin-item tin-item-20 tin-item-right i1">i1</div>
+    <div class="tin-item tin-item-20 tin-item-top i2">i2</div>
+    <div class="tin-item tin-item-20 tin-item-bottom i3">i3</div>
+    <div class="tin-item tin-item-20 i4">i4</div>
 </div>
 ```
 ![定义个别项目的对齐方式](http://ohwq8bodu.bkt.clouddn.com/git/D7D6841F-3B0B-4FC1-A626-7765BE2706F4.png)
