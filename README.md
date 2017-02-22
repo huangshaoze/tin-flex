@@ -2,7 +2,7 @@ tin-flex💫 基于flex的极简框架
 ====
 
 [![Build Status](https://api.travis-ci.org/zx1988826/tin-flex.svg?branch=master)](https://travis-ci.org/zx1988826/tin-flex)
-[![npm version](https://img.shields.io/badge/npm-v2.0.0-blue.svg)](https://www.npmjs.com/package/tin-flex)
+[![npm version](https://img.shields.io/badge/npm-v2.1.0-blue.svg)](https://www.npmjs.com/package/tin-flex)
 [![Gitter](https://badges.gitter.im/weui/weui.svg)](https://gitter.im/tin-flex)
 
 ## 概述
@@ -24,10 +24,10 @@ tin-flex 是基于flex布局的极简CSS3框架，你可以用小巧的它搭建
     <div class="tin-item tin-item-auto i4">i4</div>
 </div>
 ```
-![构建基本的flex布局](http://ohwq8bodu.bkt.clouddn.com/git/id_rsa_2048.png)
+![构建基本的flex布局](http://ohwq8bodu.bkt.clouddn.com/tinflex/ACF5A0F4-8CEC-4901-A763-CF675D7FCE77.png)
 
 #### 2.百分比更改单个列的大小
-如果你想自行安排部件 **tin-item** 的大小，那么久通过 **tin-item-10** ，**tin-item-15** ，**tin-item-25** ，**tin-item-50** 。最后的数字，表示部件占据容器的百分比。
+如果你想自行安排部件 **tin-item** 的大小，可以通过 **tin-item-10** ，**tin-item-20** ，**tin-item-30** ，**tin-item-40** 等来安排部件的大小 。最后的数字，表示部件占据容器的百分比。
 ```html
 <div class="tin-flex">
     <div class="tin-item tin-item-10 i1">i1</div>
@@ -71,7 +71,7 @@ tin-item-first，tin-item-last，可以用来前置或者后置容器中的部�
     <div class="tin-item i3 tin-item-auto">i6</div>
 </div>
 ```
-![响应式列](http://ohwq8bodu.bkt.clouddn.com/git/17786751-CE9F-432D-8737-5247C1E7600A.png)
+![自动列](http://ohwq8bodu.bkt.clouddn.com/tinflex/D0730B02-242A-4922-A98E-D3AA617BCC62.png)
 
 #### 5.自动换行
 默认情况下，容器中的flex是不换行的，你可以加上 **tin-flex-wrap** 让它自动换行
